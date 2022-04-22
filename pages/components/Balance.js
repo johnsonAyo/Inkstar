@@ -15,8 +15,8 @@ const Balance = ({ user }) => {
         address: user.get("ethAddress"),
       })
       .catch((e) => console.log(e));
-    if (result.balance) {
-      setEthBalance(Moralis.Units.FromWei(result.balance));
+    if (result?.balance) {
+      setEthBalance(Moralis.Units.FromWei(result?.balance));
     }
   };
 
