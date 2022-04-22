@@ -1,7 +1,7 @@
 import React from "react";
 import { Button, Center, Flex, Text } from "@chakra-ui/react";
 
-export const Header = ({ user, logout, isLoggingOut }) => {
+const Header = ({ user, logout, isLoggingOut }) => {
   return (
     <div>
       <Flex justifyContent="space-between" p="5" bg="purple.400" color="white">
@@ -16,7 +16,7 @@ export const Header = ({ user, logout, isLoggingOut }) => {
             ml="4"
             colorScheme="purple"
             onClick={logout}
-            disable={isLoggingOut}
+            disabled={isLoggingOut}
           >
             Logout
           </Button>
@@ -25,3 +25,4 @@ export const Header = ({ user, logout, isLoggingOut }) => {
     </div>
   );
 };
+export default Header;

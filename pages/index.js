@@ -11,7 +11,12 @@ import {
   TabPanel,
 } from "@chakra-ui/react";
 import Head from "next/head";
-import { Header } from "./components/Header";
+import Header from "./components/Header";
+import Profile from "./components/Profile";
+import Balance from "./components/Balance";
+import Transaction from "./components/Transaction";
+import Nft from "./components/Nft";
+import Send from "./components/Send";
 
 export default function Home() {
   const { isAuthenticated, authenticate, user, logout, isLoggingOut } =
@@ -39,7 +44,7 @@ export default function Home() {
                 signingMessage: "sign to login to dashboard",
               })
             }
-            colorScheme="purple"
+         
             size="lg"
             mt="6"
           >
@@ -57,20 +62,35 @@ export default function Home() {
       <Flex direction="column" width="100vw" height="100vh">
         <Header user={user} logout={logout} isLoggingOut={isLoggingOut} />
         <Box flex="1" bg="purple.100" px="44" py="20">
-          <Tabs>
+          <Tabs
+            size="lg"
+       
+            align="center"
+            variant="enclosed"
+          >
             <TabList>
-              <Tab fontWeight="bold"> Profile</Tab>
+              <Tab fontWeight="bold">Profile</Tab>
               <Tab fontWeight="bold"> Balance</Tab>
               <Tab fontWeight="bold"> Transaction</Tab>
               <Tab fontWeight="bold"> NFTS</Tab>
               <Tab fontWeight="bold"> Send Eth</Tab>
             </TabList>
             <TabPanels>
-              <TabPanel>Profile</TabPanel>
-              <TabPanel>Balance</TabPanel>
-              <TabPanel>Transaction</TabPanel>
-              <TabPanel>NFTS</TabPanel>
-              <TabPanel> Send Eth</TabPanel>
+              <TabPanel>
+                <Profile user={user} />
+              </TabPanel>
+              <TabPanel>
+                <Balance user={user} />
+              </TabPanel>
+              <TabPanel>
+                <Transaction user={user} />
+              </TabPanel>
+              <TabPanel>
+                <Nft user={user} />
+              </TabPanel>
+              <TabPanel>
+                <Send user={user} />
+              </TabPanel>
             </TabPanels>
           </Tabs>
         </Box>
