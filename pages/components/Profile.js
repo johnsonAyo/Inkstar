@@ -9,9 +9,11 @@ const Profile = ({ user }) => {
   console.log(input);
   return (
     <CustomContainer>
-      <Text>
-        <b> 😎&nbsp; Username:</b> {user.getUsername()}
-      </Text>
+      {user && (
+        <Text>
+          <b> 😎&nbsp; Username:</b> {user.getUsername()}
+        </Text>
+      )}
       <Text>
         <b> 💰&nbsp; Wallet Address:</b> {user.get("ethAddress")}
       </Text>

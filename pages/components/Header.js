@@ -11,7 +11,7 @@ const Header = ({ user, logout, isLoggingOut }) => {
           </Text>
         </Center>
         <Center>
-          <Text> {user.getUsername()} </Text>
+          {user && <Text> {user.getUsername()} </Text>}
           <Button
             ml="4"
             colorScheme="purple"
