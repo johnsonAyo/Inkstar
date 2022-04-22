@@ -14,9 +14,11 @@ const Profile = ({ user }) => {
           <b> 😎&nbsp; Username:</b> {user.getUsername()}
         </Text>
       )}
-      <Text>
-        <b> 💰&nbsp; Wallet Address:</b> {user.get("ethAddress")}
-      </Text>
+      {user && (
+        <Text>
+          <b> 💰&nbsp; Wallet Address:</b> {user.get("ethAddress")}
+        </Text>
+      )}
       <form
         onSubmit={(e) => {
           e.preventDefault();
