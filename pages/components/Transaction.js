@@ -26,8 +26,8 @@ const Transaction = ({ user }) => {
   }, []);
 
   return (
-    <CustomContainer>
-      <Text fontSize="xl" mb="6" fontWeight="bold">
+    <CustomContainer fontFamily="Acme">
+      <Text fontSize="xl" mb="6" fontWeight="bold" fontFamily="Acme">
         My last 20 Transactions
       </Text>
       {transactions &&
