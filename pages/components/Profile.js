@@ -1,5 +1,5 @@
 import { Text, FormControl, FormLabel, Input, Button } from "@chakra-ui/react";
-import CustomContainer from "./CustomContainer";
+import CustomContainer from "./CustomContainer/CustomContainer";
 import { useState } from "react";
 import { useMoralis } from "react-moralis";
 

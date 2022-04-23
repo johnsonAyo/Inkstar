@@ -1,4 +1,4 @@
-import CustomContainer from "./CustomContainer";
+import CustomContainer from "./CustomContainer/CustomContainer";
 import { useMoralisWeb3Api } from "react-moralis";
 import { useState, useEffect } from "react";
 import { Text, Divider, Link } from "@chakra-ui/react";

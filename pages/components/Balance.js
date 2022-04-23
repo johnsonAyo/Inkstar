@@ -1,7 +1,7 @@
 import { useERC20Balances, useMoralisWeb3Api } from "react-moralis";
 import { useEffect, useState } from "react";
 import { Divider, Text } from "@chakra-ui/react";
-import CustomContainer from "./CustomContainer";
+import CustomContainer from "./CustomContainer/CustomContainer";
 import Moralis from "moralis";
 
 const Balance = ({ user }) => {

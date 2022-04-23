@@ -1,4 +1,4 @@
-import CustomContainer from "./CustomContainer";
+import CustomContainer from "./CustomContainer/CustomContainer";
 import {
   Text,
   NumberDecrementStepper,

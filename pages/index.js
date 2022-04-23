@@ -45,6 +45,7 @@ export default function Home() {
           height="100vh"
           bgGradient="linear(to-br, teal.400, purple.300)"
         >
+          {/* <Header /> */}
           <Text
             fontSize="5xl"
             fontWeight="bold"
@@ -58,6 +59,7 @@ export default function Home() {
             fontWeight="light"
             color="black"
             fontFamily="Acme"
+            textAlign="center"
           >
             A decentralised wallet for managing your Erc20 tokens, Nfts and
             other cypto Assests
@@ -86,7 +88,7 @@ export default function Home() {
       </Head>
       <Flex direction="column" width="100vw" height="100vh">
         <Header user={user} logout={logout} isLoggingOut={isLoggingOut} />
-        <Box flex="1" bg="purple.100" px="44" py="20">
+        <Box flex="1" bg="purple.100">
           <Tabs size="lg" align="center" variant="enclosed">
             <TabList>
               <Tab fontWeight="bold">Profile</Tab>
