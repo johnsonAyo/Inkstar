@@ -25,6 +25,16 @@ export default function Home() {
     return (
       <>
         <Head>
+          <link rel="preconnect" href="https://fonts.googleapis.com" />
+          <link
+            rel="preconnect"
+            href="https://fonts.gstatic.com"
+            crossOrigin="true"
+          />
+          <link
+            href="https://fonts.googleapis.com/css2?family=Acme&display=swap"
+            rel="stylesheet"
+          />
           <title> Login | Dashboard3</title>
         </Head>
         <Flex
@@ -35,8 +45,22 @@ export default function Home() {
           height="100vh"
           bgGradient="linear(to-br, teal.400, purple.300)"
         >
-          <Text fontSize="5xl" fontWeight="bold" color="white">
-            Dashboard3
+          <Text
+            fontSize="5xl"
+            fontWeight="bold"
+            color="white"
+            fontFamily="Acme"
+          >
+            Welcome to Nexta wallet
+          </Text>
+          <Text
+            fontSize="2xl"
+            fontWeight="light"
+            color="black"
+            fontFamily="Acme"
+          >
+            A decentralised wallet for managing your Erc20 tokens, Nfts and
+            other cypto Assests
           </Text>
           <Button
             onClick={() =>
@@ -44,11 +68,12 @@ export default function Home() {
                 signingMessage: "sign to login to dashboard",
               })
             }
-         
             size="lg"
             mt="6"
+            fontFamily="Acme"
+            color="blue.300"
           >
-            Login With metamask
+            connect your metamask to get started
           </Button>
         </Flex>
       </>
@@ -62,12 +87,7 @@ export default function Home() {
       <Flex direction="column" width="100vw" height="100vh">
         <Header user={user} logout={logout} isLoggingOut={isLoggingOut} />
         <Box flex="1" bg="purple.100" px="44" py="20">
-          <Tabs
-            size="lg"
-       
-            align="center"
-            variant="enclosed"
-          >
+          <Tabs size="lg" align="center" variant="enclosed">
             <TabList>
               <Tab fontWeight="bold">Profile</Tab>
               <Tab fontWeight="bold"> Balance</Tab>
