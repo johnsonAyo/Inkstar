@@ -47,12 +47,14 @@ export default function Home() {
           bgGradient="linear(to-br, teal.400, purple.300)"
         >
           <Text
-            fontSize={{ base: "3rem", md: "40px", lg: "56px" }}
+            fontSize={{ base: "2.8rem", md: "40px", lg: "56px" }}
             fontWeight="bold"
-            color="white"
+            color="black"
             fontFamily="Acme"
+            textAlign="center"
+            margin="0.5rem"
           >
-            Welcome to Nexswap
+            Welcome to Inkstar
           </Text>
           <Image
             width={{ base: "50%", md: "30%", lg: "20%" }}
