@@ -59,8 +59,8 @@ export default function Home() {
             src="https://external-preview.redd.it/0dxvS5N95eJvb_gDDorFA_zEOv_QgXr6bBc0Ki5uEHc.jpg?auto=webp&s=e3bd64c30cbfdcab221d7f4920d3a1da1fe775b5"
           />
           <Text
-            fontSize="2xl"
-            fontSize={{ base: "2rem" }}
+        
+            fontSize={{  base: "2rem", md: "3rem", lg: "3rem" }}
             margin={{ base: "2rem" }}
             fontWeight="light"
             color="black"
