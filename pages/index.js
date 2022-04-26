@@ -9,6 +9,7 @@ import {
   TabList,
   TabPanels,
   TabPanel,
+  Image,
 } from "@chakra-ui/react";
 import Head from "next/head";
 import Header from "./components/Header";
@@ -45,24 +46,29 @@ export default function Home() {
           height="100vh"
           bgGradient="linear(to-br, teal.400, purple.300)"
         >
-          {/* <Header /> */}
           <Text
-            fontSize="5xl"
+            fontSize={{ base: "3rem", md: "40px", lg: "56px" }}
             fontWeight="bold"
             color="white"
             fontFamily="Acme"
           >
-            Welcome to Nexta wallet
+            Welcome to Nexswap
           </Text>
+          <Image
+            width={{ base: "50%", md: "30%", lg: "20%" }}
+            src="https://external-preview.redd.it/0dxvS5N95eJvb_gDDorFA_zEOv_QgXr6bBc0Ki5uEHc.jpg?auto=webp&s=e3bd64c30cbfdcab221d7f4920d3a1da1fe775b5"
+          />
           <Text
             fontSize="2xl"
+            fontSize={{ base: "2rem" }}
+            margin={{ base: "2rem" }}
             fontWeight="light"
             color="black"
             fontFamily="Acme"
             textAlign="center"
           >
-            A decentralised wallet for managing your Erc20 tokens, Nfts and
-            other cypto Assests
+            A decentralised wallet to manage Erc20 tokens, Nfts and other cypto
+            Assests
           </Text>
           <Button
             onClick={() =>
@@ -89,13 +95,13 @@ export default function Home() {
       <Flex direction="column" width="100vw" height="100vh">
         <Header user={user} logout={logout} isLoggingOut={isLoggingOut} />
         <Box flex="1" bg="purple.100">
-          <Tabs size="lg" align="center" variant="enclosed">
-            <TabList>
-              <Tab fontWeight="bold">Profile</Tab>
-              <Tab fontWeight="bold"> Balance</Tab>
-              <Tab fontWeight="bold"> Transaction</Tab>
-              <Tab fontWeight="bold"> NFTS</Tab>
-              <Tab fontWeight="bold"> Send Eth</Tab>
+          <Tabs size="100%" align="center" variant="enclosed">
+            <TabList >
+              <Tab marginRight="1rem" fontWeight="bold">Profile</Tab>
+              <Tab  marginRight="1rem" fontWeight="bold"> Balance</Tab>
+              <Tab  marginRight="1rem" fontWeight="bold"> Transaction</Tab>
+              <Tab   marginRight="1rem" fontWeight="bold"> NFTS</Tab>
+              <Tab  marginRight="1rem" fontWeight="bold"> Send Eth</Tab>
             </TabList>
             <TabPanels>
               <TabPanel>

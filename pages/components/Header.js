@@ -7,7 +7,7 @@ const Header = ({ user, logout, isLoggingOut }) => {
       <Flex justifyContent="space-between" p="5" bg="purple.400" color="white">
         <Center>
           <Text fontSize="xl" fontWeight="bold" fontFamily="Acme">
-            Nexta-wallet
+            Nexswap
           </Text>
         </Center>
         <Center>
